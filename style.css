@@ -132,12 +132,13 @@ button:focus {
 .navbar {
   /* background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%); */
   background-color: transparent;
+  /* background-color: var(--raisin); */
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  position: fixed;
+  position: stastic;
   top: 0rem;
   z-index: 999;
   width: 100%;
