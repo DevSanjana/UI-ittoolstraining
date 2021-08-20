@@ -1,0 +1,214 @@
+HTML FOR NEWSLETTER      
+<!-- NEWSLETTER -->
+      <section class="news-letter">
+        <div class="news-letter-wrapper">
+          <form class="news-letter-content" action="action_page.php">
+            <h3 class="nl-title">Subscribe to ittoolstraining for Updates</h3>
+            <p>
+              Subscribe to our monthly News Letter for Updates on Courses,
+              Internship opportunities and Heavy Discount Coupons.
+            </p>
+            <div class="nl-form">
+              <input type="text" placeholder="class" name="name" required />
+              <input
+                type="text"
+                placeholder="Email address"
+                name="mail"
+                required
+              />
+              <div class="nl-btn">
+                <input type="submit" value="Subscribe" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+CSS FOR NEWSLETTER
+/* NEWS-LETTER */
+.news-letter {
+  background-color: var(--raisin);
+  color: #fff;
+}
+.news-letter p {
+  padding: 2rem 0rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+.news-letter-content {
+  flex: 2 1 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
+  text-align: center;
+}
+.nl-title {
+  padding: 1rem 0rem;
+  font-family: "Cinzel", serif;
+}
+.nl-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.nl-form input[type="text"] {
+  background: none;
+  border: none;
+  color: #fff;
+  height: 6rem;
+  width: 40rem;
+  padding: 1rem;
+  margin: 1rem 0rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+.nl-form input:focus {
+  outline: none;
+  border-color: var(--orange);
+}
+.nl-form input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+.nl-btn input {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  height: 6rem;
+  width: 40rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nl-btn {
+  border-radius: 2px;
+  outline: none;
+  border: none;
+  background-color: var(--primary);
+  color: #fff;
+  border: 1px solid var(--primary);
+  margin: 1rem 0;
+}
+.nl-btn:hover {
+  background-color: rgb(119, 0, 143);
+  border: 1px solid rgb(119, 0, 143);
+}
+
+.nl-title {
+  padding: 1rem 0rem;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.nl-title::after {
+  content: "";
+  height: 0.5rem;
+  width: 20%;
+  border-radius: 1rem;
+  background-color: var(--orange);
+  position: absolute;
+  left: 40%;
+  /* left: 0%; for mobile view */
+  bottom: 0rem;
+}
+.news-letter-wrapper {
+  min-height: 40vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+CODE FOR CARDS
+<div class="row">
+              <div class="col-md-3">
+                <div class="card text-center course-card">
+                  <a href="./course-details.html">
+                    <div
+                      class="cards__item__pic-wrap"
+                      data-category="Programming and Framework"
+                    >
+                      <img
+                        src="https://training.ittoolstraining.com/wp-content/uploads/2021/06/54d40ccfbbe4110e4bc26c3cbe5cd7bd.jpg"
+                        alt=""
+                        class="card-img-top"
+                      />
+                    </div>
+                    <div class="card-body">
+                      <h4 class="card-title">
+                        Master C# OOPs & Other Advance Concepts
+                      </h4>
+                      <p class="card-text">
+                        <i class="fas fa-user"></i> 31 reviews
+                      </p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center course-card">
+                  <div
+                    class="cards__item__pic-wrap"
+                    data-category="Programming and Framework"
+                  >
+                    <img
+                      src="https://training.ittoolstraining.com/wp-content/uploads/2021/06/98b50aee200d9c1cc6678723d1d64136.jpg"
+                      alt=""
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Become a Master in JavaScript</h4>
+                    <p class="card-text">
+                      <i class="fas fa-user"></i> 25 reviews
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center course-card">
+                  <div
+                    class="cards__item__pic-wrap"
+                    data-category="Programming and Framework"
+                  >
+                    <img
+                      src="https://training.ittoolstraining.com/wp-content/uploads/2021/06/54d40ccfbbe4110e4bc26c3cbe5cd7bd.jpg"
+                      alt=""
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">
+                      Master C# OOPs & Other Advance Concepts
+                    </h4>
+                    <p class="card-text">
+                      <i class="fas fa-user"></i> 31 reviews
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card text-center course-card">
+                  <div
+                    class="cards__item__pic-wrap"
+                    data-category="Programming and Framework"
+                  >
+                    <img
+                      src="https://training.ittoolstraining.com/wp-content/uploads/2021/06/98b50aee200d9c1cc6678723d1d64136.jpg"
+                      alt=""
+                      class="card-img-top"
+                    />
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-title">Become a Master in JavaScript</h4>
+                    <p class="card-text">
+                      <i class="fas fa-user"></i> 25 reviews
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
