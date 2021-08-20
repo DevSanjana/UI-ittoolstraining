@@ -470,6 +470,11 @@ a {
   padding-bottom: 2rem;
   text-align: center;
 }
+/* .course-categ .nav-link {
+}
+.nav-link .active {
+  background-color: var(--primary);
+} */
 
 /* TESTIMONALS */
 .testimonals {
