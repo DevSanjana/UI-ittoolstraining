@@ -383,16 +383,18 @@
             will prepare you for real world challenges and help advance your
             career.
           </p>
-          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link active"
-                id="pills-all-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-all"
+                id="all-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#all"
                 type="button"
                 role="tab"
-                aria-controls="pills-all"
+                aria-controls="all"
                 aria-selected="true"
               >
                 All
@@ -401,12 +403,12 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="pills-popular-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-popular"
+                id="popular-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#popular"
                 type="button"
                 role="tab"
-                aria-controls="pills-popular"
+                aria-controls="popular"
                 aria-selected="false"
               >
                 Popular
@@ -415,24 +417,40 @@
             <li class="nav-item" role="presentation">
               <button
                 class="nav-link"
-                id="pills-pf-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#pills-pf"
+                id="pf-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#pf"
                 type="button"
                 role="tab"
-                aria-controls="pills-pf"
+                aria-controls="pf"
                 aria-selected="false"
               >
                 Programming and Framework
               </button>
             </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="cloudcomputing-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#cloudcomputing"
+                type="button"
+                role="tab"
+                aria-controls="cloudcomputing"
+                aria-selected="false"
+              >
+              Cloud Computing
+              </button>
+            </li>
           </ul>
-          <div class="tab-content" id="pills-tabContent">
+
+          <!-- Tab panes -->
+          <div class="tab-content">
             <div
-              class="tab-pane fade show active"
-              id="pills-all"
+              class="tab-pane active"
+              id="all"
               role="tabpanel"
-              aria-labelledby="pills-all-tab"
+              aria-labelledby="all-tab"
             >
               <div class="row">
                 <div class="col-md-3">
@@ -534,18 +552,26 @@
               </div>
             </div>
             <div
-              class="tab-pane fade"
-              id="pills-popular"
+              class="tab-pane"
+              id="popular"
               role="tabpanel"
-              aria-labelledby="pills-popular-tab"
+              aria-labelledby="popular-tab"
             >
-              <p>Only Popular courses will be displayed</p>
+              .....
             </div>
             <div
-              class="tab-pane fade"
-              id="pills-pf"
+              class="tab-pane"
+              id="pf"
               role="tabpanel"
-              aria-labelledby="pills-pf-tab"
+              aria-labelledby="pf-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane"
+              id="cloudcomputing"
+              role="tabpanel"
+              aria-labelledby="cloudcomputing-tab"
             >
               ...
             </div>

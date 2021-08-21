@@ -464,17 +464,25 @@ a {
 }
 
 .course-categ p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   /* font-weight: bold; */
   padding: 0rem 2rem;
   padding-bottom: 2rem;
   text-align: center;
 }
-/* .course-categ .nav-link {
-}
-.nav-link .active {
+.course-categ .nav-link {
   background-color: var(--primary);
-} */
+  border-bottom-left-radius: 0rem;
+  border-top-left-radius: 1rem;
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.course-categ .nav-tabs .nav-item .nav-link .active {
+  color: var(--orange);
+}
 
 /* TESTIMONALS */
 .testimonals {
@@ -521,15 +529,6 @@ a {
   transform: scale(1.1);
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
   transition: all 0.5s ease-out;
-}
-.viewAll-btn {
-  font-size: 1.8rem;
-  background-color: var(--primary);
-  margin-top: 2rem;
-  padding: 1rem 4rem;
-}
-.viewAll-btn:hover {
-  background-color: #fff;
 }
 
 /* FOOTER */
