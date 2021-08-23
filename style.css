@@ -601,28 +601,13 @@ input:checked + .slider > .bSlider {
   color: #fff;
 }
 
-/* .personalCards {
-  //background-color: lightgray;
+.personalCards {
+  /* background-color: lightgray; */
   display: flex;
   justify-content: space-around;
   align-items: center;
   min-width: 80vw;
   flex-wrap: wrap;
-} */
-.plan1 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 80vw;
-  flex-wrap: wrap;
-}
-.plan2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 80vw;
-  flex-wrap: wrap;
-  display: none;
 }
 .ppCard {
   display: flex;
@@ -645,7 +630,7 @@ input:checked + .slider > .bSlider {
   background-color: rgb(27, 67, 141);
   border-radius: 1rem;
 }
-#plan2 {
+.hidden {
   display: none;
 }
 

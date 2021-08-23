@@ -1,12 +1,7 @@
-const plan1 = document.querySelector(".plan1");
-const plan2 = document.querySelector(".plan2");
+let plan1 = document.querySelector(".plan1");
+let plan2 = document.querySelector(".plan2");
 
 const switchPlan = () => {
-  if (plan2.style.display === "none") {
-    plan1.style.display === "none";
-    plan2.style.display === "block";
-  } else {
-    plan1.style.display === "block";
-    plan2.style.display === "none";
-  }
+  plan1.classList.toggle("hidden");
+  plan2.classList.toggle("hidden");
 };
