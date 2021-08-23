@@ -439,7 +439,7 @@
                 aria-controls="cloudcomputing"
                 aria-selected="false"
               >
-              Cloud Computing
+                Cloud Computing
               </button>
             </li>
           </ul>
@@ -579,10 +579,44 @@
         </div>
       </div>
 
+      <!-- reference -->
+      <!-- onClick={() => setPlans(!plans)} -->
+
       <!-- PURCHASE PLANS -->
-      <!-- <section>
+      <section>
         <h3>HERE COMES PURCHASE PLANS</h3>
-      </section> -->
+        <div class="toggleContainer">
+          <h3 class="plansTitle">Purchase Plans</h3>
+          <div class="togglePlans">
+            <label class="switch">
+              <input type="checkbox" onclick="switchPlan()" />
+              <span class="slider">
+                <span class="pSlider">Personal</span>
+                <span class="bSlider">Business</span>
+              </span>
+            </label>
+
+            <div class="personalCards plan1">
+              <div class="ppCard">
+                <h3>
+                  Full Bundle <br />
+                  78% off
+                </h3>
+              </div>
+              <div class="ppCard">
+                <h3>
+                  Full Bundle <br />
+                  85% off
+                </h3>
+              </div>
+            </div>
+
+            <div class="personalCards plan2">
+              <h1>This is BUSINESS</h1>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- TESTIMONALS -->
       <section id="testimonals" class="testimonals">
@@ -718,5 +752,8 @@
       integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JAVASCRIPT LINK -->
+    <link rel="stylesheet" href="./script.js" />
   </body>
 </html>
