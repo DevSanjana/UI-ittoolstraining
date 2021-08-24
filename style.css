@@ -384,7 +384,7 @@ a {
   align-items: flex-start;
 }
 .courseText li {
-  font-size: 2rem;
+  font-size: 1.8rem;
   padding-bottom: 2rem;
   list-style-position: outside;
 }
@@ -496,7 +496,8 @@ a {
   align-items: center;
 }
 .toggleContainer {
-  width: 100%;
+  max-width: 90%;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -615,18 +616,21 @@ input:checked + .slider > .slider2 {
   color: #fff;
 }
 
-.personalCards {
+.plan1,
+.plan2 {
   /* background-color: lightgray; */
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  min-width: 80vw;
-  flex-wrap: wrap;
+  /* min-width: 80vw; */
   animation: opening 1s ease-in-out;
 }
 .ppCard {
   display: flex;
-  flex-flow: column;
+  /* flex-flow: column; */
+  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   background-color: cornflowerblue;
@@ -638,13 +642,31 @@ input:checked + .slider > .slider2 {
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 1rem;
   overflow: hidden;
-  flex: 1 1 40rem;
 }
-.ppCard h3 {
+.plan2 .ppCard {
+  max-width: 55%;
+  /* width:100% for mobile responsive */
+}
+.price-tag {
   padding: 2rem;
-  background-color: rgb(27, 67, 141);
+  background-color: #fff;
+  /* background-color: rgb(27, 67, 141); */
   border-radius: 1rem;
 }
+.plans-text li {
+  font-size: 1.8rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fa-check {
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: aqua;
+}
+
 .hidden {
   display: none;
 }
