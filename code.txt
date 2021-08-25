@@ -212,3 +212,124 @@ CODE FOR CARDS
                 </div>
               </div>
             </div>
+
+PURCHASE PLANS
+            <section id="pricing">
+        <div class="toggleContainer">
+          <h3 class="plansTitle">Purchase Plans</h3>
+          <p>
+            IT Training Packages offered by us online are pocket-friendly and
+            will provide you easy access to in-depth knowledge. You can simply
+            choose among our <span>Six Courses Package</span> and
+            <span>Full Package</span> which are designed to suit your needs. Or
+            you can also buy individual courses. We totally understand that
+            learning any software online is a big step, and everyone is cautious
+            for afraudulent move. ITToolsTraining assures you transparency in
+            course with comprehensive details.
+          </p>
+          <div class="togglePlans">
+            <label class="switch">
+              <input type="checkbox" onclick="switchPlan()" />
+              <span class="slider">
+                <span class="slider1">Six Courses</span>
+                <span class="slider2">Full Package</span>
+              </span>
+            </label>
+
+            <div class="plan1">
+              <div class="ppCard">
+                <h2 class="price-tag">
+                  <del class="original-price"
+                    ><div class="currency-rupees"></div>
+                    10000</del
+                  >
+                  <span class="sale-price"
+                    ><div class="currency-rupees"></div>
+                    1500</span
+                  >
+                  <span class="price-off"> (85%) </span>
+                </h2>
+                <ul class="plans-text">
+                  <li>
+                    <i class="fas fa-check"></i>You get to choose 6 courses from
+                    our 34 advanced IT courses
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Access to these courses for 3
+                    years
+                  </li>
+                  <!-- <li><i class="fas fa-check"></i>You Can Unlock 3 Courses For A Lifetime</li> -->
+                  <li>
+                    <i class="fas fa-check"></i>Projects To See The Actual
+                    Implemenation Of The Concepts
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Test Your Knowledge With
+                    Quizzes.
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Free Access To all the updated
+                    content in the course
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Good for planning and building a
+                    career
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Generate Course Completion
+                    Certificates
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>30 day money back guarantee
+                  </li>
+                </ul>
+                <button class="btn btn--primary btn--large">
+                  BUY FULL PACKAGE
+                </button>
+              </div>
+            </div>
+
+            <div class="plan2 hidden">
+              <div class="ppCard">
+                <h2 class="price-tag">
+                  <del class="original-price">10000</del>
+                  <span class="sale-price">1500</span>
+                  <span class="price-off"> (85%) </span>
+                </h2>
+                <ul class="plans-text">
+                  <li>
+                    <i class="fas fa-check"></i>Access to 34 Courses for 3 years
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>You Can Unlock 5 Courses For A
+                    Lifetime
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    Projects To See The Actual Implemenation Of The Concepts
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Test Your Knowledge With Quizzes
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    Free Access To all the updated content in the course
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>
+                    You will be mentored by IT professionals who have/had REAL
+                    working experience in the world’s best IT companies
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>Generate Course Completion
+                    Certificates
+                  </li>
+                  <li>
+                    <i class="fas fa-check"></i>30 day money back guarantee
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>

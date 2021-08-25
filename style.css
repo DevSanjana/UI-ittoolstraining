@@ -89,7 +89,8 @@ a {
 /* BUTTON STYLING */
 .btn {
   padding: 8px 20px;
-  border-radius: 2px;
+  border-radius: 1rem;
+  /* border-radius: 2px; */
   outline: none;
   border: none;
   cursor: pointer;
@@ -490,20 +491,22 @@ a {
 
 /* PURCHASE PLANS */
 #pricing {
-  min-height: 100vh;
+  min-height: 120vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .toggleContainer {
   max-width: 90%;
-  margin: auto;
+  margin: 6rem auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* background-color: var(--raisin);
-  color: #fff; */
+}
+.pricing-title {
+  text-align: center;
+  padding-bottom: 2rem;
 }
 .plansTitle {
   margin-bottom: 4rem;
@@ -525,6 +528,10 @@ a {
   /* left: calc(50%- (width/2)%); */
   left: 25%;
   bottom: 0rem;
+}
+.toggleContainer p {
+  text-align: center;
+  padding: 0.5rem;
 }
 .togglePlans {
   display: flex;
@@ -567,7 +574,6 @@ a {
 .slider::before {
   position: absolute;
   content: "";
-  /* background-color: var(--primary); */
   background-color: var(--orange);
   transition: 0.4s;
   height: 6rem;
@@ -577,10 +583,6 @@ a {
   bottom: 0.5rem;
   border-radius: 6rem;
 }
-
-/* input:checked + .slider {
-  background-color: var(--primary);
-} */
 
 .slider1 {
   position: absolute;
@@ -633,7 +635,7 @@ input:checked + .slider > .slider2 {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
   padding: 2rem;
   margin: 2rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.17);
@@ -642,6 +644,9 @@ input:checked + .slider > .slider2 {
   filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
   border-radius: 1rem;
   overflow: hidden;
+}
+.ppCard button {
+  margin: 2rem 0rem;
 }
 .plan2 .ppCard {
   max-width: 55%;
@@ -652,6 +657,40 @@ input:checked + .slider > .slider2 {
   background-color: #fff;
   /* background-color: rgb(27, 67, 141); */
   border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.original-price,
+.price-off {
+  font-size: 2rem;
+  color: rgb(68, 68, 68);
+  font-weight: normal;
+}
+.sale-price {
+  font-weight: bold;
+  padding: 0rem 0.5rem;
+}
+.ribbon-wrapper {
+  width: 12rem;
+  height: 12rem;
+  overflow: hidden;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+.ribbon {
+  font: bold 15px sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  transform: rotate(45deg);
+  position: relative;
+  padding: 0.5rem;
+  top: 3.5rem;
+  left: -0.5rem;
+  width: 15.5rem;
+  background-color: #4dd637;
+  color: #fff;
 }
 .plans-text li {
   font-size: 1.8rem;
@@ -664,7 +703,7 @@ input:checked + .slider > .slider2 {
   padding-right: 1rem;
   padding-top: 0.5rem;
   font-size: 2rem;
-  color: aqua;
+  color: #4dd637;
 }
 
 .hidden {
