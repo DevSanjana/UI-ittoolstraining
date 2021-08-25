@@ -50,43 +50,18 @@ a:hover {
 .course-details-title p {
   padding-top: 2rem;
 }
-/* .buy-btn {
-  margin-top: 1rem;
-  cursor: pointer;
-} */
-/* .buy-btn:hover {
-  background: linear-gradient(to top, #8a2387, #e94057, #f27121);
-} */
-.buy-btn {
-  padding: 12px 26px;
-  border-radius: 2px;
-  font-size: 2rem;
-  outline: none;
-  border: none;
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-  transition: all 0.3s ease-out;
-  margin: 1rem 0rem;
-  margin-right: 1rem;
-  cursor: pointer;
-}
-.buy-btn:hover,
-.buy-pack:hover {
-  transition: all 0.3s ease-out;
-  background: #fff;
-  color: #242424;
-  transition: 250ms;
-}
 .btns-flex {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
-.btn-pack {
-  background-color: var(--primary);
-  color: #fff;
-  border: 1px solid var(--primary);
+.buy-btn {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  cursor: pointer;
+}
+.buy-btn:hover {
+  background: linear-gradient(to top, #8a2387, #e94057, #f27121);
 }
 .course-details-info-wrap {
   width: 80%;

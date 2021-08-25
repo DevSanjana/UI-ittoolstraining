@@ -73,7 +73,7 @@ a:hover {
   text-decoration: none;
 }
 button {
-  padding: 2rem 4rem;
+  /* padding: 2rem 4rem; */
   background: none;
   border: none;
   border-radius: 1rem;
@@ -108,7 +108,7 @@ a {
 }
 
 .btn--outline {
-  background-color: transparent;
+  background-color: none;
   color: #fff;
   padding: 8px 20px;
   border: 1px solid #fff;
@@ -128,7 +128,7 @@ a {
 .btn--large:hover,
 .btn--medium:hover {
   transition: all 0.3s ease-out;
-  background: #fff;
+  background-color: #fff;
   color: #242424;
   transition: 250ms;
 }
@@ -324,12 +324,11 @@ a {
 }
 
 /* ABOUT COURSES IN LANDING PAGE */
-.about-courses {
+.sec {
   min-height: 80vh;
-  /* background-color: var(--grey); */
-  margin-top: 5rem;
+  margin-top: 15rem;
 }
-.about-courses-wrapper {
+.sec-wrapper {
   width: 90%;
   margin: auto;
   display: flex;
@@ -337,21 +336,15 @@ a {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 0rem;
-  padding-top: 10rem;
 }
-.about-courses h2 {
-  text-align: center;
-  padding: 2rem;
-  /* text-transform: uppercase; */
-}
-.course-img {
+.sec-img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex: 1 1 40rem;
 }
-.courseText {
+.secText {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -359,7 +352,7 @@ a {
   flex: 2 1 40rem;
   margin-left: 10rem;
 }
-.courseText h3 {
+.secText h3 {
   margin-bottom: 4rem;
   padding: 2rem;
   display: inline-block;
@@ -367,7 +360,7 @@ a {
   font-family: "Cinzel", serif;
   font-weight: bold;
 }
-.courseText h3::after {
+.secText h3::after {
   content: "";
   height: 0.5rem;
   width: 40%;
@@ -378,19 +371,27 @@ a {
   left: 30%;
   bottom: 0rem;
 }
-.courseText ul {
+.secText ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
 }
-.courseText li {
+.secText li {
   font-size: 1.8rem;
   padding-bottom: 2rem;
   list-style-position: outside;
 }
-.courseText li:not(:last-child) {
+.secText li:not(:last-child) {
   margin-bottom: 1.5rem;
+}
+.sec1 {
+  background-color: var(--grey);
+  margin: 0rem;
+  padding: 4rem 0rem;
+}
+.sec1 .secText {
+  margin: 0rem;
 }
 
 /* COURSE CARDS */
