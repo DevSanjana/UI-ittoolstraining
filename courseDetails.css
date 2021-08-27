@@ -144,6 +144,7 @@ a:hover {
 /* MODAL */
 .modal {
   color: #000;
+  margin: 2rem;
 }
 .modal-title {
   text-align: center;
@@ -587,15 +588,17 @@ footer {
     justify-content: space-around;
     align-items: flex-start;
     width: 45rem;
-    /* width: 65rem; */
     top: 10%;
     left: 5%;
   }
   .course-preview {
     top: 65%;
     left: 5%;
-    width: 355px;
+    width: 345px;
     height: 185px;
+  }
+  .btns-flex .btn {
+    margin-top: 2rem;
   }
 }
 
