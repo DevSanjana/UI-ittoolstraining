@@ -109,6 +109,12 @@ a:hover {
   border: 1px solid #fff;
   transition: all 0.3s ease-out;
 }
+.btn--black-outline {
+  background-color: none;
+  color: #000;
+  border: 1px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
 
 .btn--medium {
   padding: 8px 20px;
@@ -127,6 +133,39 @@ a:hover {
   color: #242424;
   transition: 250ms;
 }
+.btn--primary-hover:hover {
+  transition: all 0.3s ease-out;
+  background-color: #7b2e9c;
+  color: #fff;
+  transition: 250ms;
+}
+
+/* MODAL */
+.modal {
+  color: #000;
+}
+.modal-title {
+  text-align: center;
+  font-size: 2.5rem;
+}
+.close {
+  font-size: 3rem;
+  padding: 1rem;
+}
+.plans-text li {
+  font-size: 1.8rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.fa-check {
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #4dd637;
+}
+
 /* COURSE DETAILS NAVBAR */
 .cd-head {
   min-height: 10vh;
@@ -333,6 +372,12 @@ a:hover {
 .course-content-card-body:hover {
   background-color: rgba(255, 255, 255, 0.07);
   border-left: 3px solid var(--orange);
+}
+.course-content-video {
+  margin: 2rem;
+  border-radius: 1rem;
+  width: 520px;
+  height: 275px;
 }
 .lesson-title-div {
   border: 1px solid rgba(255, 255, 255, 0.3);
