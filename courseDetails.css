@@ -179,7 +179,8 @@ a:hover {
 .courseDetailsBg {
   position: absolute;
   top: -55%;
-  left: -6.8%;
+  /* left: -6.8%; */
+  right: 0%;
   z-index: -1;
 }
 .pattern2 {
@@ -567,13 +568,7 @@ footer {
   html {
     font-size: 50%;
   }
-  .courseDetailsBg {
-    position: absolute;
-    overflow-x: hidden;
-    top: -50%;
-    left: -80%;
-    z-index: -1;
-  }
+
   .pattern2 {
     position: absolute;
     top: 100%;
@@ -591,21 +586,16 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-start;
-    width: 65rem;
+    width: 45rem;
+    /* width: 65rem; */
     top: 10%;
     left: 5%;
   }
   .course-preview {
-    position: absolute;
-    z-index: -1;
-    top: 48%;
+    top: 65%;
     left: 5%;
-
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
-  }
-  .course-preview {
-    width: 430px;
-    height: 215px;
+    width: 355px;
+    height: 185px;
   }
 }
 
