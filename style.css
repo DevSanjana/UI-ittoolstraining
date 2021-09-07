@@ -800,7 +800,6 @@ footer {
   position: absolute;
   bottom: 0rem;
   right:0rem;
-  /* width: 100%; */
   z-index: -1;
 }
 .footer-wrapper {
@@ -840,8 +839,6 @@ footer {
   align-items: center;
   padding: 2rem;
   color: #fff;
-  /* border-top: 0.5rem solid var(--orange);
-  padding: 2rem; */
 }
 
 .footer-nav li {
@@ -863,7 +860,6 @@ footer {
   margin-top: 2rem;
   }
   .features-ui {
-    width: auto;
     right: 0rem;
     top: 132rem;
   }
@@ -888,7 +884,6 @@ footer {
     align-items: center;
   }
   .secText li {
-    /* font-size: 1.6rem; */
     text-align:center
   }
   .sec1 .secText h3 {
@@ -924,11 +919,6 @@ footer {
   .social-links a img{
     width:2rem;
     height:auto;
-  }
-  .footer-ui {
-    bottom: 10rem;
-    width: 100%;
-    z-index: -1;
   }
 }
 
