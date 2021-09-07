@@ -247,9 +247,51 @@
           <h2><span class="currency-rupees">&#8377</span>100</h2>
          
           <div class="btns-flex">
-           <button type="button" class="btn btn--outline btn--large" data-toggle="modal" data-target="#exampleModal1Center">BUY THIS COURSE</button>
+           <button type="button" class="btn btn--outline btn--large" data-toggle="modal" data-target="#exampleModalScrollable">BUY THIS COURSE</button>
            <button type="button" class="btn btn--primary btn--large" data-toggle="modal" data-target="#exampleModal2Center">BUY FULL PACKAGE</button> 
-           
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalScrollableTitle">SIGN UP TO BUY THIS COURSE AT <span class="currency-rupees">&#8377</span>100</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <form id="signup-form" class="signup-form">
+                  <div class="form-control">
+                    <!-- <label for="username">Username</label> -->
+                    <input type="text" id="username" placeholder="Username"/>
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control">
+                    <input type="text" id="email" placeholder="Email ID" />
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control">
+                    <input type="tel" id="phone" placeholder="Phone Number" />
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control">
+                    <input type="password" id="password" placeholder="Password" />
+                    <small>Error message</small>
+                  </div>
+                  <div class="form-control">
+                    <input
+                    type="password"
+                    id="password2" placeholder="Confirm Password"/>
+                    <small>Error message</small>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn--black-outline btn--medium"  data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn--primary btn--medium btn--primary-hover">Submit</button>
+              </div>
+            </div>
+            </div>
+          </div>
 <!-- Modal1 -->
 <div class="modal fade" id="exampleModal1Center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
@@ -261,61 +303,120 @@
         </button>
       </div>
       <div class="modal-body">
-      <P>SIGN UP FORM</P> 
+        <form id="form" class="signup-form">
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input type="text" id="username" required/>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input type="text" id="email" required/>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required/>
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" id="password" />
+            <small>Error message</small>
+          </div>
+          <div class="form-control">
+            <label for="password2">Confirm Password</label>
+            <input
+              type="password"
+              id="password2"
+            />
+            <small>Error message</small>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn--black-outline btn--medium"  data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn--primary btn--medium btn--primary-hover">Submit</button>
+        <button type="submit" class="btn btn--primary btn--medium btn--primary-hover">Submit</button>
       </div>
     </div>
   </div>
 </div>   
 
 <!-- Modal2 -->
-<div class="modal fade" id="exampleModal2Center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">BUY FULL PACKAGE OF COURSES AT <span class="currency-rupees">&#8377</span>1500</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <ul class="plans-text">
-          <li>
-            <i class="fas fa-check"></i>Access to 34 Courses for a
-            Lifetime
-          </li>
-          <li>
-            <i class="fas fa-check"></i>
-            Projects to see the Actual Implemenation of the Concepts
-          </li>
-          <li>
-            <i class="fas fa-check"></i>Test your Knowledge with Quizzes
-          </li>
-          <li>
-            <i class="fas fa-check"></i>
-            Free Access to Newly Added Courses
-          </li>
-          <li>
-            <i class="fas fa-check"></i>
-            You will be mentored by IT professionals who have/had REAL
-            working experience in the world’s best IT companies
-          </li>
-          <li>
-            <i class="fas fa-check"></i>Generate 34 Course Completion
-            Certificates
-          </li>
-        </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn--black-outline btn--medium" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn--primary btn--medium btn--primary-hover">BUY NOW</button>
-      </div>
-    </div>
-  </div>
-</div>                    
+      <div class="modal fade" id="exampleModal2Center" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">BUY FULL PACKAGE OF COURSES AT <span class="currency-rupees">&#8377</span>1500</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul class="plans-text">
+                <li>
+                  <i class="fas fa-check"></i>Access to 34 Courses for a
+                  Lifetime
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Projects to see the Actual Implemenation of the Concepts
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>Test your Knowledge with Quizzes
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  Free Access to Newly Added Courses
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>
+                  You will be mentored by IT professionals who have/had REAL
+                  working experience in the world’s best IT companies
+                </li>
+                <li>
+                  <i class="fas fa-check"></i>Generate 34 Course Completion
+                  Certificates
+                </li>
+              </ul>
+              <form id="form" class="signup-form hidden">
+                <div class="form-control">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" required/>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input type="text" id="email" required/>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" required/>
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" />
+                  <small>Error message</small>
+                </div>
+                <div class="form-control">
+                  <label for="password2">Confirm Password</label>
+                  <input
+                    type="password"
+                    id="password2"
+                  />
+                  <small>Error message</small>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn--black-outline btn--medium" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn--primary btn--medium btn--primary-hover">BUY NOW</button>
+            </div>
+          </div>
+        </div>
+      </div>                    
           </div>
         </div>
         <iframe width="560" height="315" class="course-preview" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -466,15 +567,15 @@
                     course-content-card-flex course-content-card-body
                   "
                 >
-                  <!-- <p>Getting started with Python Programming</p> -->
+                  <p>Getting started with Python Programming</p>
                   <!-- <p class="attachment">
                     <a href="" download>
                       <i class="fa fa-paperclip" aria-hidden="true"></i>
                       Resources
                     </a>
                   </p> -->
-                  <!-- <p class="time-value">5mins</p> -->
-                  <iframe width="560" height="315" class="course-content-video" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p class="time-value">5mins</p>
+                  <!-- <iframe width="560" height="315" class="course-content-video" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
               </div>
             </div>
@@ -513,7 +614,8 @@
                     course-content-card-flex course-content-card-body
                   "
                 >
-                <iframe width="560" height="315" class="course-content-video" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Getting started with Python Programming</p>
+                  <p class="time-value">5mins</p>
                 </div>
               </div>
             </div>
@@ -552,7 +654,8 @@
                     course-content-card-flex course-content-card-body
                   "
                 >
-                <iframe width="560" height="315" class="course-content-video" src="https://www.youtube.com/embed/rfscVS0vtbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Getting started with Python Programming</p>
+                  <p class="time-value">5mins</p>
                 </div>              
               </div>
             </div>
@@ -918,5 +1021,6 @@
         </div>
       </div>
     </footer>
+    <script src="./signup.js"></script>
   </body>
 </html>

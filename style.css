@@ -29,12 +29,11 @@ body {
   --h4: 2rem;
   --text: 1.5rem;
   --raisin: #181d27;
-  /* --orange: #f26925; */
   --orange: #e07c24;
   --primary: #8d3daf;
-  /* --grey: #e8e8e8; */
   --grey: rgba(209, 208, 208, 0.479);
-  /* --primary: #004aaa; */
+  --success-color: #2ecc71;
+  --error-color: #e74c3c;
 }
 
 h1 {
@@ -861,7 +860,7 @@ footer {
   }
   .features-ui {
     right: 0rem;
-    top: 155rem;
+    top: 156rem;
   }
   .features-intro h2 {
     font-size: 3.5rem;
