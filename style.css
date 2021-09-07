@@ -252,9 +252,8 @@ a {
 }
 .features-ui {
   position: absolute;
-  top: 5rem;
+  top: 6rem;
   right: 0rem;
-  /* width: 100%; */
   z-index: -1;
 }
 .features-wrap {
@@ -342,14 +341,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex: 1 1 40rem;
+  width:100px;
+  height:auto;
+  object-fit:scale-down;
+  flex: 1 1 30rem;
 }
 .secText {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: flex-start;
-  flex: 2 1 40rem;
+  flex: 2 1 30rem;
   margin-left: 10rem;
 }
 .secText h3 {
@@ -664,7 +666,6 @@ input:checked + .slider > .slider2 {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  /* background-color: cornflowerblue; */
   padding: 2rem;
   margin: 2rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.17);
@@ -734,9 +735,11 @@ input:checked + .slider > .slider2 {
   font-size: 2rem;
   color: #4dd637;
 }
-
 .hidden {
   display: none;
+}
+.modal{
+  z-index:10rem;
 }
 
 /* TESTIMONALS */
@@ -796,7 +799,8 @@ footer {
 .footer-ui {
   position: absolute;
   bottom: 0rem;
-  width: 100%;
+  right:0rem;
+  /* width: 100%; */
   z-index: -1;
 }
 .footer-wrapper {
@@ -852,64 +856,51 @@ footer {
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
-  .features {
-    background-color: var(--raisin);
-    max-height: 272vh;
+
+  .hero-text h1{
+    font-size: 3rem;
+  padding:2rem 1rem;
+  margin-top: 2rem;
   }
   .features-ui {
     width: auto;
     right: 0rem;
-    top: 100rem;
+    top: 132rem;
   }
   .features-intro h2 {
     font-size: 3.5rem;
   }
-  .about-courses {
-    margin-top: 29rem;
-  }
-  .about-courses h2 {
+  .sec h2 {
     font-size: 3.5rem;
   }
-  .courseText h3::after {
-    left: 3%;
+  .sec {
+    min-height: 80vh;
+    margin-top: 15rem;
+  }
+  .secText {
+    align-items: center;
+    margin-left: 0rem;
+  }
+  .secText ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .secText li {
+    /* font-size: 1.6rem; */
+    text-align:center
+  }
+  .sec1 .secText h3 {
+  text-align:center;
+  padding-left:0rem;
+  padding-right:0rem;
+}
+  .plan2 .ppCard {
+    max-width: 100%;
   }
   .testimonals h2 {
     font-size: 3.5rem;
-  }
-  .hero-text {
-    max-width: 25rem;
-    margin-top: 10rem;
-    margin-left: 5rem;
-  }
-
-  .hero-text > h1 {
-    font-size: 3.5rem;
-    margin-top: -100px;
-  }
-
-  .hero-text > h4 {
-    font-size: 1.5rem;
-    padding: 0rem;
-  }
-
-  .hero-btns {
-    margin-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    min-width: 43rem;
-  }
-
-  .hero-btns .btn {
-    margin-bottom: 2rem;
-  }
-
-  .nl-title {
-    font-size: 2rem;
-  }
-  .news-letter p {
-    font-size: 1.5rem;
   }
   .footer-text p {
     font-weight: lighter;
@@ -930,6 +921,10 @@ footer {
   .social-links {
     margin-left: 1rem;
   }
+  .social-links a img{
+    width:2rem;
+    height:auto;
+  }
   .footer-ui {
     bottom: 10rem;
     width: 100%;
@@ -938,19 +933,7 @@ footer {
 }
 
 @media screen and (max-width: 960px) {
-  .hero-text {
-    max-width: 40rem;
-    margin-top: 10rem;
-    margin-left: 10rem;
-  }
-
-  .hero-text > h1 {
-    font-size: 4.5rem;
-    margin-top: -150px;
-  }
-
-  .hero-text > h4 {
-    font-size: 1.8rem;
-    padding: 1.5rem 0rem;
+  .plan2 .ppCard {
+    max-width: 100%;
   }
 }
