@@ -861,7 +861,7 @@ footer {
   }
   .features-ui {
     right: 0rem;
-    top: 132rem;
+    top: 150rem;
   }
   .features-intro h2 {
     font-size: 3.5rem;
@@ -892,7 +892,7 @@ footer {
   padding-right:0rem;
 }
   .plan2 .ppCard {
-    max-width: 100%;
+    width: 100%;
   }
   .testimonals h2 {
     font-size: 3.5rem;
